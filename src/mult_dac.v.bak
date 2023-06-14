@@ -1,0 +1,41 @@
+module mult_dac(
+	input clk,
+	input rst,
+	input [11:0] dac_car,
+	input [11:0] dac_modu,
+	output [23:0] mul_result
+);
+
+reg [23:0] mul_result_reg;
+
+assign mul_result_reg = mul_result;
+
+always@(posedge clk or negedge rst )
+begin
+	if(!rst)
+	begin
+	mul_result_reg <= 24'd0;
+	end
+	
+
+
+
+
+
+end
+
+
+endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+

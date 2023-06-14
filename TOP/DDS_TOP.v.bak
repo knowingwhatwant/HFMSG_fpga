@@ -1,0 +1,147 @@
+module DDS_TOP(
+	input clk,
+	input rst_n,
+	//input fre_c,
+	//output dac_clk,
+	output [11:0] dac_data_carrier,
+	output [11:0] dac_data_modu,
+	//output [63:0] freq_c,
+	//output [11:0] addr1,
+	//output [11:0] addr2,
+	output clk_inv,
+	output [23:0] result
+);
+
+
+wire clk_50M;
+wire clk_100M;
+wire clk_120M;
+wire clk_div120;
+wire clk_200M;
+wire [63:0] freq_c_carrier;
+wire [63:0] freq_c_modu;
+
+wire [11:0] dac_data_modu_pre;
+wire [11:0] addr_carrier;
+wire [11:0] addr_modu;
+
+//wire [11:0] dac_data1;
+//wire [11:0] dac_data2;
+
+
+
+assign clk_inv = ~clk_120M;
+
+
+
+pll_clk U_pll
+(
+    .areset(~rst_n),
+    .inclk0(clk),
+    .c0(clk_50M),
+	 .c1(clk_100M),		//
+	 .c2(clk_120M),
+	 .c3(clk_1M)
+);
+
+div_120 u_div_120
+(
+	.clk(clk_50M),
+	.rst(rst_n),
+	.clk_div(clk_div120)
+);
+
+
+//第一个频率控制字
+ freq_ctrl_modu U1_freq_ctrl_modu
+ (
+	.clk(clk_div120),
+	.rst(rst_n),
+	.freq_c(freq_c_modu)
+ );
+//第二个频率控制字
+
+ freq_ctrl_carrier U2_freq_ctrl_carrier
+ (
+	.clk(clk_div120),
+	.rst(rst_n),
+	.freq_c(freq_c_carrier)
+ );
+
+
+//累加器1
+acc_32bit U1_acc_32bit_carrier(
+	.clk(clk_120M),
+	.rst(rst_n),
+	.fre_c(freq_c_carrier),
+	.adder(addr_carrier)
+);
+//累加器2
+acc_32bit U2_acc_32bit_modu(
+	.clk(clk_120M),
+	.rst(rst_n),
+	.fre_c(freq_c_modu),
+	.adder(addr_modu)
+);
+
+
+sin_rom U1_sin_rom_carrier(
+	.clock(clk_120M),
+	.address(addr_carrier),		//12bit地址
+	.q(dac_data_carrier)			//查表输出
+);
+
+sin_rom U2_sin_rom_modu(
+	.clock(clk_120M),
+	.address(addr_modu),		//12bit地址
+	.q(dac_data_modu_pre)			//查表输出
+);
+
+AM_modu U0_AM
+(
+	.clk(clk),
+	.rst(rst_n),
+	.dac_c(dac_data_carrier),
+	.dac_m(dac_data_modu),
+	.AM_wave(result)
+);
+
+
+
+
+
+
+
+am_bias U0_am_bias
+(
+	.clk(clk),
+	.rst(rst_n),
+	.dac_modu(dac_data_modu_pre),
+	.dac_bias_modu(dac_data_modu)
+);
+
+
+am_bias U0_am_bias
+(
+	.clk(clk),
+	.rst(rst_n),
+	.dac_modu(dac_data_modu_pre),
+	.dac_bias_modu(dac_data_modu)
+);
+
+/*
+//乘法器
+ipcore_mult_ip U1_ipcore_mult_ip
+(
+	.dataa(dac_data_modu),
+	.datab(dac_data_carrier),
+	.result(result)
+);
+*/
+
+
+
+
+
+endmodule
+

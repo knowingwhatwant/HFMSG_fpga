@@ -1,0 +1,33 @@
+module modu_ampl_ctrl(
+	input clk,
+	input rst,
+	input  [11:0]dac_modu,
+	//input 	am_ctrl,
+	output [11:0]dac_bias_modu
+);
+
+reg [12:0]dac_bias_modu_reg;
+
+assign dac_bias_modu = dac_bias_modu_reg;
+
+ parameter [10:0]BIAS = 2047;
+
+
+ always@(posedge clk or negedge rst)
+ begin
+	if(!rst)
+	begin
+	dac_bias_modu_reg <= dac_modu;
+	end
+	else begin
+	dac_bias_modu_reg <= (dac_modu>>1) + BIAS;
+	end
+ 
+ 
+ end
+
+ endmodule
+ 
+ 
+ 
+ 
