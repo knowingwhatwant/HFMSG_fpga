@@ -1,0 +1,8 @@
+module testdac(
+	input clk,
+	input rst,
+	output [11:0]dac
+);
+
+
+

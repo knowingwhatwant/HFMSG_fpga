@@ -3,19 +3,20 @@ module DDS_TOP(
 	input rst_n,
 	//input fre_c,
 	//output dac_clk,
-	output [11:0] dac_car_data_ampl,
-	output [11:0] dac_modu_data_ampl,
+	//output [11:0] dac_car_data_ampl,
+	//output [11:0] dac_modu_data_ampl,
 	//output [63:0] freq_c,
 	//output [11:0] addr1,
 	//output [11:0] addr2,
-	output clk_inv,
-	output [23:0] result,
+	output clk_inv,		//dac902上升沿读数据，下降沿该数据
+	//output [23:0] result,
+	output clk_out,
 	output [11:0] dac_12bit
 );
 
 
 wire clk_50M;
-wire clk_100M;
+wire clk_25M;
 wire clk_120M;
 wire clk_div120;
 wire clk_200M;
@@ -28,11 +29,27 @@ wire [11:0]	dac_data_modu;
 wire [11:0] addr_carrier;
 wire [11:0] addr_modu;
 
-//wire [11:0] dac_modu_data_ampl;
-//wire [11:0] dac_car_data_ampl;
+wire [11:0] dac_modu_data_ampl;
+wire [11:0] dac_car_data_ampl;
 
 
-assign clk_inv = ~clk_120M;
+assign clk_inv = ~clk_120M2;
+assign clk_out = clk;
+
+//assign test_128 = clk_120M;
+//assign dac_12bit = 12'b010101010101;
+
+
+/*
+testdac u0_dac(
+	.clk(clk),
+	.rst(rst_n),
+	.dac(dac_12bit)
+
+);
+*/
+
+
 
 
 
@@ -41,9 +58,9 @@ pll_ip U_pll
     .areset(~rst_n),
     .inclk0(clk),
     .c0(clk_50M),
-	 .c1(clk_100M),		//
+	 .c1(clk_25M),		//
 	 .c2(clk_120M),
-	 .c3(clk_1M)
+	 .c3(clk_120M2)
 );
 
 div_120 u_div_120
@@ -101,14 +118,14 @@ sin_rom_ip U2_sin_rom_modu(
 
 //rom表输出之后的幅度控制
 car_ampl_ctrl u0_car_ampl_ctrl(
-	.clk(clk),
+	.clk(clk_120M),
 	.rst(rst_n),
 	.dac_car(dac_data_carrier),
 	.dac_car_ampl(dac_car_data_ampl)
 );
 
 modu_ampl_ctrl u0_modu_ampl_ctrl(
-	.clk(clk),
+	.clk(clk_120M),
 	.rst(rst_n),
 	.dac_modu(dac_data_modu),
 	.dac_modu_ampl(dac_modu_data_ampl)
@@ -120,7 +137,7 @@ modu_ampl_ctrl u0_modu_ampl_ctrl(
 //AM信号产生
 mult_dac U0_AM
 (
-	.clk(clk),
+	.clk(clk_120M),
 	.rst(rst_n),
 	.dac_car(dac_car_data_ampl),
 	.dac_modu(dac_modu_data_ampl),
@@ -132,10 +149,14 @@ mult_dac U0_AM
 
 
 
-
-
-
-
+/*
+div_120 u_div_clk
+(
+	.clk(clk_120M),
+	.rst(rst_n),
+	.clk_div(test_128)
+);
+*/
 /*
 //乘法器
 ipcore_mult_ip U1_ipcore_mult_ip

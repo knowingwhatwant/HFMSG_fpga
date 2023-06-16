@@ -18,7 +18,7 @@ parameter [10:0]BIAS = 1023;
 	dac_car_ampl_reg <= dac_car;
 	end
 	else begin
-	dac_car_ampl_reg <= (dac_car>>1) + BIAS;
+	dac_car_ampl_reg <=dac_car; //(dac_car>>1) + BIAS;
 	end
  end
 
