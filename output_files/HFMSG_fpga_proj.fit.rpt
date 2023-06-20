@@ -1,5 +1,5 @@
 Fitter report for HFMSG_fpga_proj
-Fri Jun 16 11:26:24 2023
+Tue Jun 20 15:23:00 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Jun 16 11:26:24 2023       ;
+; Fitter Status                      ; Successful - Tue Jun 20 15:23:00 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; HFMSG_fpga_proj                             ;
 ; Top-level Entity Name              ; DDS_TOP                                     ;
@@ -161,12 +161,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 3.14        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;  14.3%      ;
+;     Processors 2-16        ; < 0.1%      ;
 +----------------------------+-------------+
 
 
@@ -3358,7 +3358,7 @@ Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Warning (15064): PLL "pll_ip:U_pll|altpll:altpll_component|pll_ip_altpll:auto_generated|pll1" output port clk[3] feeds output pin "clk_inv~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -3371,17 +3371,17 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.72 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.91 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/24811/Desktop/Summer_2023_fpga/HFMSG_fpga/output_files/HFMSG_fpga_proj.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 6154 megabytes
-    Info: Processing ended: Fri Jun 16 11:26:24 2023
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 6156 megabytes
+    Info: Processing ended: Tue Jun 20 15:23:01 2023
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:10
 
 
