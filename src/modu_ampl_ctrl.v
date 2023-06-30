@@ -8,7 +8,7 @@ module modu_ampl_ctrl(
 
 reg [11:0]dac_modu_ampl_reg;
 
-parameter [10:0]BIAS = 2047;
+parameter [10:0]BIAS = 0;
 
 
  always@(posedge clk or negedge rst)
@@ -18,7 +18,7 @@ parameter [10:0]BIAS = 2047;
 	dac_modu_ampl_reg <= dac_modu;
 	end
 	else begin
-	dac_modu_ampl_reg <= (dac_modu >>1) + BIAS;
+	dac_modu_ampl_reg <= (dac_modu) + BIAS;
 	end
  end
 

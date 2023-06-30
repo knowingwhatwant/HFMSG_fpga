@@ -3,6 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
+	P ActionCode(Cfg)
+		Device PartName(EP4CE10E22) Path("C:/Users/24811/Desktop/Summer_2023_fpga/HFMSG_fpga/output_files/") File("HFMSG_fpga_proj.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -1,16 +1,16 @@
-Fitter Status : Successful - Wed Jun 21 16:30:22 2023
+Fitter Status : Successful - Sat Jun 24 00:49:23 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : HFMSG_fpga_proj
 Top-level Entity Name : DDS_TOP
 Family : Cyclone IV E
 Device : EP4CE10E22C8
 Timing Models : Final
-Total logic elements : 1,333 / 10,320 ( 13 % )
-    Total combinational functions : 1,076 / 10,320 ( 10 % )
-    Dedicated logic registers : 950 / 10,320 ( 9 % )
-Total registers : 950
-Total pins : 16 / 92 ( 17 % )
+Total logic elements : 2,457 / 10,320 ( 24 % )
+    Total combinational functions : 2,104 / 10,320 ( 20 % )
+    Dedicated logic registers : 1,223 / 10,320 ( 12 % )
+Total registers : 1223
+Total pins : 64 / 92 ( 70 % )
 Total virtual pins : 0
-Total memory bits : 147,456 / 423,936 ( 35 % )
-Embedded Multiplier 9-bit elements : 4 / 46 ( 9 % )
+Total memory bits : 196,608 / 423,936 ( 46 % )
+Embedded Multiplier 9-bit elements : 46 / 46 ( 100 % )
 Total PLLs : 1 / 2 ( 50 % )

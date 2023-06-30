@@ -4,7 +4,7 @@
   </display_tree>
   <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
     <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
-    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2023/06/14 23:19:13  #0">
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2023/06/23 15:38:35  #0">
       <clock name="clk_inv" polarity="posedge" tap_mode="classic"/>
       <config ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="4096" trigger_in_enable="no" trigger_out_enable="no"/>
       <top_entity/>
@@ -22,6 +22,18 @@
           <wire name="dac_12bit[7]" tap_mode="classic"/>
           <wire name="dac_12bit[8]" tap_mode="classic"/>
           <wire name="dac_12bit[9]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[0]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[10]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[11]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[1]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[2]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[3]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[4]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[5]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[6]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[7]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[8]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[9]" tap_mode="classic"/>
         </trigger_input_vec>
         <data_input_vec>
           <wire name="dac_12bit[0]" tap_mode="classic"/>
@@ -36,6 +48,18 @@
           <wire name="dac_12bit[7]" tap_mode="classic"/>
           <wire name="dac_12bit[8]" tap_mode="classic"/>
           <wire name="dac_12bit[9]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[0]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[10]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[11]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[1]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[2]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[3]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[4]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[5]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[6]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[7]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[8]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[9]" tap_mode="classic"/>
         </data_input_vec>
         <storage_qualifier_input_vec>
           <wire name="dac_12bit[0]" tap_mode="classic"/>
@@ -50,11 +74,37 @@
           <wire name="dac_12bit[7]" tap_mode="classic"/>
           <wire name="dac_12bit[8]" tap_mode="classic"/>
           <wire name="dac_12bit[9]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[0]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[10]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[11]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[1]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[2]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[3]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[4]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[5]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[6]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[7]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[8]" tap_mode="classic"/>
+          <wire name="dac_car_data_ampl[9]" tap_mode="classic"/>
         </storage_qualifier_input_vec>
       </signal_vec>
       <presentation>
         <unified_setup_data_view>
-          <node name="dac_12bit" order="msb_to_lsb" radix="unsigned_dec" state="expand" type="output pin">
+          <node name="dac_car_data_ampl" order="msb_to_lsb" radix="line" type="output pin">
+            <node data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="14" type="unknown"/>
+            <node data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="classic" trigger_index="13" type="unknown"/>
+            <node data_index="23" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="23" tap_mode="classic" trigger_index="23" type="unknown"/>
+            <node data_index="22" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="22" tap_mode="classic" trigger_index="22" type="unknown"/>
+            <node data_index="21" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="21" tap_mode="classic" trigger_index="21" type="unknown"/>
+            <node data_index="20" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="20" tap_mode="classic" trigger_index="20" type="unknown"/>
+            <node data_index="19" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="19" tap_mode="classic" trigger_index="19" type="unknown"/>
+            <node data_index="18" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="18" tap_mode="classic" trigger_index="18" type="unknown"/>
+            <node data_index="17" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="17" tap_mode="classic" trigger_index="17" type="unknown"/>
+            <node data_index="16" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="classic" trigger_index="16" type="unknown"/>
+            <node data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="15" type="unknown"/>
+            <node data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="12" type="unknown"/>
+          </node>
+          <node name="dac_12bit" order="msb_to_lsb" radix="unsigned_dec" type="output pin">
             <node data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_12bit[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="unknown"/>
             <node data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_12bit[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="unknown"/>
             <node data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_12bit[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="unknown"/>
@@ -70,7 +120,21 @@
           </node>
         </unified_setup_data_view>
         <data_view>
-          <bus name="dac_12bit" order="msb_to_lsb" radix="unsigned_dec" state="expand" type="output pin">
+          <bus name="dac_car_data_ampl" order="msb_to_lsb" radix="line" type="output pin">
+            <net data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="14" type="unknown"/>
+            <net data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="classic" trigger_index="13" type="unknown"/>
+            <net data_index="23" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="23" tap_mode="classic" trigger_index="23" type="unknown"/>
+            <net data_index="22" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="22" tap_mode="classic" trigger_index="22" type="unknown"/>
+            <net data_index="21" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="21" tap_mode="classic" trigger_index="21" type="unknown"/>
+            <net data_index="20" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="20" tap_mode="classic" trigger_index="20" type="unknown"/>
+            <net data_index="19" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="19" tap_mode="classic" trigger_index="19" type="unknown"/>
+            <net data_index="18" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="18" tap_mode="classic" trigger_index="18" type="unknown"/>
+            <net data_index="17" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="17" tap_mode="classic" trigger_index="17" type="unknown"/>
+            <net data_index="16" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="classic" trigger_index="16" type="unknown"/>
+            <net data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="15" type="unknown"/>
+            <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="12" type="unknown"/>
+          </bus>
+          <bus name="dac_12bit" order="msb_to_lsb" radix="unsigned_dec" type="output pin">
             <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_12bit[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="unknown"/>
             <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_12bit[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="unknown"/>
             <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_12bit[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="unknown"/>
@@ -86,7 +150,21 @@
           </bus>
         </data_view>
         <setup_view>
-          <bus name="dac_12bit" order="msb_to_lsb" radix="unsigned_dec" state="expand" type="output pin">
+          <bus name="dac_car_data_ampl" order="msb_to_lsb" radix="line" type="output pin">
+            <net data_index="14" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="14" tap_mode="classic" trigger_index="14" type="unknown"/>
+            <net data_index="13" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="13" tap_mode="classic" trigger_index="13" type="unknown"/>
+            <net data_index="23" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="23" tap_mode="classic" trigger_index="23" type="unknown"/>
+            <net data_index="22" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="22" tap_mode="classic" trigger_index="22" type="unknown"/>
+            <net data_index="21" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="21" tap_mode="classic" trigger_index="21" type="unknown"/>
+            <net data_index="20" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="20" tap_mode="classic" trigger_index="20" type="unknown"/>
+            <net data_index="19" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="19" tap_mode="classic" trigger_index="19" type="unknown"/>
+            <net data_index="18" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="18" tap_mode="classic" trigger_index="18" type="unknown"/>
+            <net data_index="17" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="17" tap_mode="classic" trigger_index="17" type="unknown"/>
+            <net data_index="16" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="16" tap_mode="classic" trigger_index="16" type="unknown"/>
+            <net data_index="15" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="15" tap_mode="classic" trigger_index="15" type="unknown"/>
+            <net data_index="12" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_car_data_ampl[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="12" tap_mode="classic" trigger_index="12" type="unknown"/>
+          </bus>
+          <bus name="dac_12bit" order="msb_to_lsb" radix="unsigned_dec" type="output pin">
             <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_12bit[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="unknown"/>
             <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_12bit[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="unknown"/>
             <net data_index="11" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="dac_12bit[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="unknown"/>
@@ -104,7 +182,7 @@
         <trigger_in_editor/>
         <trigger_out_editor/>
       </presentation>
-      <trigger CRC="C69732EC" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2023/06/14 23:19:13  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="64" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+      <trigger CRC="A08C7B8B" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2023/06/23 15:38:35  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="4096" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
         <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
         <events use_custom_flow_control="no">
           <level enabled="yes" name="condition1" type="basic">
@@ -113,8 +191,8 @@
           </level>
         </events>
         <storage_qualifier_events>
-          <transitional>111111111111
-            <pwr_up_transitional>111111111111</pwr_up_transitional>
+          <transitional>111111111111111111111111
+            <pwr_up_transitional>111111111111111111111111</pwr_up_transitional>
           </transitional>
           <storage_qualifier_level type="basic">
             <power_up>
@@ -136,7 +214,7 @@
     </signal_set>
     <position_info>
       <single attribute="active tab" value="0"/>
-      <single attribute="data horizontal scroll position" value="901"/>
+      <single attribute="data horizontal scroll position" value="666"/>
       <single attribute="data vertical scroll position" value="0"/>
       <single attribute="zoom level denominator" value="1"/>
       <single attribute="zoom level numerator" value="128"/>

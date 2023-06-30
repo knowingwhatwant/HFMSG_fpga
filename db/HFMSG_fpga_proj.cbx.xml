@@ -1,15 +1,38 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="HFMSG_fpga_proj">
-		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter" CBX_FILE_NAME="cntr_m9j.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|pll_ip:U_pll|altpll:altpll_component" CBX_FILE_NAME="pll_ip_altpll.v"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sin_rom_ip:U1_sin_rom_carrier|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5qe1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult1|mult_nit:auto_generated|alt_mac_mult:mac_mult31|lpm_mult:mult|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_8dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult0|mult_nit:auto_generated|alt_mac_mult:mac_mult31|lpm_mult:mult|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_0dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult0|mult_nit:auto_generated|alt_mac_mult:mac_mult33|lpm_mult:mult|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_8dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult0|mult_nit:auto_generated|alt_mac_mult:mac_mult9" CBX_FILE_NAME="mac_mult_ftg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult0|mult_nit:auto_generated|alt_mac_out:mac_out32" CBX_FILE_NAME="mac_out_mr82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter" CBX_FILE_NAME="cntr_ggi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult1|mult_nit:auto_generated|alt_mac_mult:mac_mult31|lpm_mult:mult|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_0dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult1|mult_nit:auto_generated|alt_mac_mult:mac_mult33|lpm_mult:mult|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_8dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult1|mult_nit:auto_generated|alt_mac_mult:mac_mult9" CBX_FILE_NAME="mac_mult_ftg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult1|mult_nit:auto_generated|alt_mac_out:mac_out32" CBX_FILE_NAME="mac_out_mr82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|mult_dac:U0_AM|lpm_mult:Mult1|mult_v5t:auto_generated|alt_mac_out:mac_out2" CBX_FILE_NAME="mac_out_ur82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult0|mult_nit:auto_generated|alt_mac_mult:mac_mult33|lpm_mult:mult|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_0dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult0|mult_nit:auto_generated|alt_mac_out:mac_out34" CBX_FILE_NAME="mac_out_mr82.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sin_rom_ip:U2_sin_rom_modu|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5qe1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_dvf.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_u024.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter" CBX_FILE_NAME="cntr_ggi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter" CBX_FILE_NAME="cntr_23j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult1|mult_nit:auto_generated|alt_mac_mult:mac_mult33|lpm_mult:mult|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_0dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult1|mult_nit:auto_generated|alt_mac_out:mac_out34" CBX_FILE_NAME="mac_out_mr82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|mult_dac:U0_AM|lpm_mult:Mult0" CBX_FILE_NAME="mult_16t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_uvi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult0" CBX_FILE_NAME="mult_nit.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult0|mult_nit:auto_generated|alt_mac_out:mac_out10" CBX_FILE_NAME="mac_out_or82.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|mult_dac:U0_AM|lpm_mult:Mult1" CBX_FILE_NAME="mult_v5t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|mult_dac:U0_AM|lpm_mult:Mult1|mult_v5t:auto_generated|alt_mac_mult:mac_mult1" CBX_FILE_NAME="mac_mult_g9h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|pll_ip:U_pll|altpll:altpll_component" CBX_FILE_NAME="pll_ip_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sin_rom_ip:U1_sin_rom_carrier|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5qe1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_4124.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult1" CBX_FILE_NAME="mult_nit.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult1|mult_nit:auto_generated|alt_mac_out:mac_out10" CBX_FILE_NAME="mac_out_or82.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_tsc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_bgi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_fgi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|FM_Module:u0_FM_Module|lpm_mult:Mult0|mult_nit:auto_generated|alt_mac_mult:mac_mult31|lpm_mult:mult|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_8dh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DDS_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter" CBX_FILE_NAME="cntr_m9j.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
